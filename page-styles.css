@@ -1,0 +1,83 @@
+/* Pants Cancers (pantscancer.co.uk) - Charity No. 1147098
+   Built & maintained by Simply Computerz (https://simplycomputerz.co.uk) */
+
+/* -----------------------------------------------
+   PAGE HERO (interior pages)
+   ----------------------------------------------- */
+.page-hero {
+  background: linear-gradient(135deg, var(--clr-primary-light) 0%, var(--clr-white) 100%);
+  border-bottom: 1px solid var(--clr-neutral-200);
+  padding-block: var(--space-16) var(--space-12);
+}
+
+.page-hero h1 {
+  font-size: var(--text-4xl);
+  letter-spacing: -0.04em;
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.page-hero-desc {
+  font-size: var(--text-md);
+  color: var(--clr-neutral-600);
+  max-width: 65ch;
+}
+
+@media (min-width: 768px) {
+  .page-hero { padding-block: var(--space-20) var(--space-16); }
+  .page-hero h1 { font-size: var(--text-5xl); }
+}
+
+/* -----------------------------------------------
+   CONTACT FORM
+   ----------------------------------------------- */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  max-width: 600px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.form-group label {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--clr-neutral-800);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  border: 2px solid var(--clr-neutral-200);
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--clr-neutral-900);
+  background: var(--clr-white);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--clr-primary);
+  box-shadow: 0 0 0 3px hsla(333, 85%, 50%, 0.15);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.form-group .field-hint {
+  font-size: var(--text-xs);
+  color: var(--clr-neutral-400);
+}

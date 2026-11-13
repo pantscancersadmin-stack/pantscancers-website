@@ -1,0 +1,15 @@
+# /contact-us/ was the WordPress canonical for contact page — redirect to cleaner /contact/
+/contact-us/   /contact/    301
+
+# WordPress homepage slug (just in case)
+/home/         /            301
+
+# Redirect any trailing-slash variants that WP might have used
+/about         /about/            301
+/events        /events/           301
+/contact       /contact/          200
+/shop          /about/our-shops/  301
+/shop/         /about/our-shops/  301
+
+# Catch-all 404
+/*             /404.html    404
